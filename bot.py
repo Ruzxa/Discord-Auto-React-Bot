@@ -3,17 +3,17 @@ from discord.ext    import commands
 from discord.ext.commands   import Bot
 import asyncio
  
-bot = commands.Bot(command_prefix='whatever_prefix_u_want_here')
+bot = commands.Bot(command_prefix='-')
  
 @bot.event
 async def on_ready():
-    print ("whatever_text_u_want_here")
+    print ("Bot Is Ready!")
  
  
 @bot.event
 async def on_message(message):
-    if(message.channel.id == "channel_id_here"):
-        await bot.add_reaction(message, "discord_emote_id_here")
+    if(message.channel.id == "961699607342121021"):
+        await bot.add_reaction(message, "🤍")
  
  
-bot.run("bot_token_here")
+bot.run("OTc3NjI5Mzk3MDYwMjg4NTYy.GFQMa5.fEddM6hBs6KrZQ2GzAQj1jA9Mp8_6JTPgA6tSc")
